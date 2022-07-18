@@ -1,0 +1,161 @@
+.container{
+    width: 80%;
+    margin: auto;
+    
+}
+.header{
+    width: 40%;
+    
+}
+.header h1{
+    font-size:2.5rem;
+}
+.header p{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+.color{
+    color: rgb(98, 101, 101);
+}
+.header i{
+    margin-left: 1%;
+    color: rgb(98, 101, 101);
+    font-weight: 500;
+}
+.image{
+    width: 79vw;
+    height: 30vw;
+}
+.img{
+    width: 100%;
+    height:inherit;
+}
+.ingredients{
+    margin-top: 3%;
+    width: 80%;
+    padding-right: 10%;
+
+}
+.card{
+    margin-top: 5%;
+    width: 20%;
+    height: fit-content;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(59, 57, 57, 0.481);
+
+}
+.card-text{
+    
+    padding: 10% 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.yields{
+    width: 50%;
+    display: flex;
+    flex-direction:row;
+    line-height: 2.5%;
+    align-items: center; 
+    margin-bottom: 15%;
+}
+.yields> p{
+    padding-right: 5%;
+}
+.yields1{
+    color: coral;
+    font-weight: 900;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+label{
+    color:rgb(98, 101, 101);
+    padding-left: 1%;
+    line-height: 2rem;
+}
+strong{
+    color: black;
+    font-weight:bold;
+}
+.list, .instruction{
+    width: 80%;
+}
+input[type=checkbox]{
+    accent-color: coral;
+}
+.text-content{
+    width: 80%;
+}
+.h3-container{
+    display:inline-flex;
+    flex-direction: row;
+    align-items: flex-start;
+    
+}
+.h3-container h3{
+    display: inline;
+   background-color: coral;
+   width: 2rem;
+   height: 2rem;
+   padding-top: 2px;
+   margin-right: 2%;
+   border-radius: 0.25rem;
+   text-align: center;
+   color: white;
+}
+.h3-container p{
+    width: 100%;
+    display: inline;
+}
+
+footer{
+    margin: 5% 0;
+    text-align: center;
+}
+@media only screen and (max-width:768px){
+    .container, .header{
+        width: 100%;
+    }
+    .header h1{
+        font-size: 2rem;
+    }
+    .image{
+       width: inherit;
+       height: auto;
+    }
+    .content{
+       display: flex;
+       flex-direction:column-reverse;
+       justify-content: flex-start;
+    }
+    .card{
+        width:inherit;
+        
+    }
+    .card-text {
+        font-size: 1rem;
+    }
+    .card-text{
+       display: grid;
+       grid-template-columns: repeat(3,1fr);
+       grid-template-rows: repeat(2,1fr);
+       
+       
+    }
+    .yields{
+        width: 100%;
+    }
+    .yields > p{
+        padding: 0;
+    }
+    .ingredients, .instruction, .list,.text-content{
+        width: 100%;
+        display: block;
+    }
+}
